@@ -12,86 +12,103 @@
       content="page for registering new customers in the system"
     />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <style>
-      * {
-        margin: 6px;
-        font-family: Arial, sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
-      <div class="container">
-        <form action="" method="post">
-          <label for="nomeCliente">Nome Completo:</label>
-          <input
-            type="text"
-            name="NomeCliente"
-            id="nomeCliente"
-            placeholder="Digite seu nome completo"
-          />
-          <!-- /input nome completo -->
-          <br />
-          <label for="username">Username:</label>
-          <input
-            id="username"
-            type="text"
-            name="username"
-            placeholder="Nome de usuário"
-          />
-          <!-- /input username do cliente -->
-          <br />
-          <label for="clienteEmail">Email:</label>
-          <input
-            id="clienteEmail"
-            type="email"
-            name="clienteEmail"
-            placeholder="Digite seu e-mail"
-          />
-          <!-- /input email do cliente -->
-          <br />
-          <label for="clienteTelefone">Celular:</label>
-          <input
-            id="clienteTelefone"
-            type="number"
-            name="clienteTelefone"
-            placeholder="(21) 9 9999-9999"
-          />
-          <!-- /input numero de celular do cliente -->
-          <br />
-          <label for="clienteSenha">Senha:</label>
-          <input
-            id="clienteSenha"
-            type="password"
-            name="clienteSenha"
-            placeholder="Digite sua senha"
-          />
-          <!-- /input senha do cliente -->
-
-          <label for="confirmaSenha">Confirmar Senha:</label>
-          <input
-            id="confirmaSenha"
-            type="password"
-            name="confirmaSenha"
-            placeholder="Confirme sua senha"
-          />
-          <!-- /input confirmar senha do cliente -->
-          <br />
-
-          <label for="sexo">Escolha seu gênero:</label>
-          <select id="sexo" name="sexo" id="sexo">
-            <option value="homem">Homem</option>
-            <option value="mulher">Mulher</option>
-            <option value="outro">Outro</option>
-          </select>
-          <!-- /select sexo -->
-
-          <br />
-          <button type="submit">Registrar cliente</button>
-        </form>
+    <div class="container">
+      <div class="title-form">
+        <h2>Registrar Cliente</h2>
       </div>
-      <!-- /container -->
-    </main>
-    <!-- /main -->
+      <form action="#" method="post">
+        <div class="user-details">
+          <!-- /input nome completo -->
+          <div class="input-box">
+            <label class="details" for="nomeCliente">Nome Completo:</label>
+            <input
+              type="text"
+              name="NomeCliente"
+              id="nomeCliente"
+              placeholder="Digite seu nome completo"
+            />
+          </div>
+          <!-- /input username do cliente -->
+          <div class="input-box">
+            <label class="details" for="username">Username:</label>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              placeholder="Nome de usuário"
+            />
+          </div>
+
+          <!-- /input email do cliente -->
+          <div class="input-box">
+            <label class="details" for="clienteEmail">Email:</label>
+            <input
+              id="clienteEmail"
+              type="email"
+              name="clienteEmail"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+          <!-- /input numero de celular do cliente -->
+          <div class="input-box">
+            <label class="details" for="clienteTelefone">Celular:</label>
+            <input
+              id="clienteTelefone"
+              type="number"
+              name="clienteTelefone"
+              placeholder="(21) 9 9999-9999"
+            />
+          </div>
+
+          <!-- /input senha do cliente -->
+          <div class="input-box">
+            <label class="details" for="clienteSenha">Senha:</label>
+            <input
+              id="clienteSenha"
+              type="password"
+              name="clienteSenha"
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <!-- input confirmar senha do cliente -->
+          <div class="input-box">
+            <label class="details" for="confirmaSenha">Confirmar Senha:</label>
+            <input
+              id="confirmaSenha"
+              type="password"
+              name="confirmaSenha"
+              placeholder="Confirme sua senha"
+            />
+          </div>
+
+          <div class="input-box">
+            <label class="details" for="sexo">Escolha seu gênero:</label>
+            <select class="select-genero" id="sexo" name="sexo" id="sexo">
+              <option value="homem">Homem</option>
+              <option value="mulher">Mulher</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <!-- /selecionar sexo -->
+
+          <div class="input-box btn-enviar">
+            <button type="submit">Registrar cliente</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- /container -->
   </body>
 </html>
